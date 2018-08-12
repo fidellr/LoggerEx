@@ -2,9 +2,9 @@
 
 class Log {
 public:
-    int LogLevelError = 0;
-    int LogLevelWarning = 1;
-    int LogLevelInfo = 2;
+    enum Level {
+        LogLevelError = 0,LogLevelWarning, LogLevelInfo
+    };
 
 private:
     int m_LogLevel = 2;
